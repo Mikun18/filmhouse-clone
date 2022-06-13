@@ -1,0 +1,452 @@
+@media only screen and (max-width: 1280px){
+    .nav{
+        padding: 0% 10%;
+    }
+
+    .caretdown{
+        margin-left: 65%;
+    }
+
+    .caretdown-city{
+        margin-left: 68%;
+    }
+
+    .searchmodal{
+        padding: 13px 50px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px){
+   .nav{
+       padding: 0% 4%;
+   }
+   
+    .nav-item{
+        margin: 0% 1%;
+        font-size: smaller;
+    }
+
+    .searchmodal{
+        padding: 13px 50px;
+    }
+
+    .searchmodal-form input{
+        width: 89%;
+    }
+
+    .about{
+        margin: 0% 4%;
+        margin-top: 15%;
+    }
+
+    .about-footer{
+        margin: 1% 4%;
+    }
+
+    .sub-image-con{
+        margin-left: 36%;
+    }
+
+    .location-con{
+        margin: 2% 4%;
+    }
+
+    .caretdown{
+        margin-left: 65%;
+    }
+
+    .caretdown-city{
+        margin-left: 68%;
+    }
+
+    .state-list{
+        padding-right: 18%;
+    }
+
+    .city-list{
+        margin-left: 31%;
+        padding-right: 15%;
+    }
+
+    .date-list{
+        margin-left: 61%;
+        padding-right: 14%;
+    }
+
+    .movieslist{
+        margin: 4%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .movie-card{
+        display: block;
+    }
+
+    .movie-card img{
+        width: 280px;
+    }
+
+    .promotion-con{
+        padding: 2% 4%;
+    }
+
+    .searchmodal-form input{
+        width: 88%;
+    }
+}
+
+@media (max-width: 941.82px){
+    .nav{
+        padding: 0% 3%;
+    }
+
+    .caretdown{
+        margin-left: 60%;
+    }
+
+    .caretdown-city{
+        margin-left: 62%;
+    }
+}
+
+@media only screen and (max-width: 769px){
+    .backg-img{
+        height: 91%;
+    }
+    
+    .nav{
+        display:none;
+    }
+
+    .about{
+        margin-top: 20%;
+    }
+
+    .about-plot{
+        display: none;
+    }
+
+    .about-title{
+        text-align: center;
+    }
+
+    .smaller-about{
+        display: flex;
+        align-items: center;
+        background-color: #16161a;
+        padding: 20px 15%;
+        margin: 8% 3%;
+        font-size: medium;
+    }
+
+    .sub-smaller-about{
+        margin-left: 30%;
+    }
+
+    .sub-smaller-about button{
+        border: none;
+        background-color: transparent;
+        backdrop-filter: 50%;
+        color: aquamarine;
+        padding: 0px 0px;
+        font-size: medium;
+        font-weight: lighter;
+        cursor:pointer;
+        letter-spacing: 0.2em;
+    }
+
+    .sub-smaller-about p{
+        padding-bottom: 10px;
+    }
+
+    .my-list{
+        margin-left: 38%;
+    }
+
+    .get-ticket{
+        display: none;
+    }
+
+    .ticket-btn{
+        margin-left: 38%;
+    }
+
+    .about-genre{
+        text-align: center;
+    }
+
+    .smaller-navbar{
+        display: flex;
+        align-items: center;
+        background-color: black;
+        padding: 0px 0px;
+        z-index: -1;
+    }
+
+    .smallernav-logo{ 
+         margin-left: 80%;
+    }
+
+    .smallernav-search{
+        margin-left: 30%;
+    }
+
+    .smallernav-user{
+        margin-left: 20%;
+    }
+
+    .sidebar-bg{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .sidebar{
+        background-color: #16161a;
+        margin-right: 60%;
+        height: 100%;
+        overflow: auto;
+    }
+
+    .side-item{
+        display: block;
+        text-decoration: none;
+        margin: 40px 20px;
+        color: darkgray;
+        font-size: larger;
+    }
+
+    .searchmodal{
+        padding:13px 10px;
+    }
+
+    .searchmodal-form input{
+        width: 80%;
+    }
+
+    .sub-image-con{
+        margin-left: 36%;
+        /* margin-top: 10%; */
+        border-radius: 50%;
+        object-fit: contain;
+    }
+
+    .locations{
+        /* position: absolute; */
+    }
+
+    .location-con{
+        margin: 2% 5%;
+    }
+
+    .where{
+       
+    }
+
+    .caretdown{
+        margin-left: 45%;
+    }
+
+    .caretdown-city{
+        margin-left: 48%;
+    }
+
+    .state-list{
+        position: absolute;
+        padding-right: 13%;
+    }
+
+    .city-list{
+        position: absolute;
+        margin-left: 31%;
+        padding-right: 8%;
+    }
+
+    .date-list{
+        position: absolute;
+        margin-left: 59.5%;
+        padding-right: 8%;
+    }
+
+    .movieslist{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .movie-card{
+        display: block;
+    }
+
+    .movie-card img{
+        margin-left: 5%;
+    }
+
+    .promotion-con{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 640px){
+    .nav{
+        display: none;
+    }
+
+    .hero-page{
+        /* height: 10%; */
+    }
+
+    .smaller-navbar{
+        display: flex;
+        align-items: center;
+        background-color: black;
+        padding: 0px 0px;
+    }
+
+    .about-plot{
+        width: 60%;
+    }
+
+    .trailer p{
+        margin-left: 15px;
+    }
+
+    .sub-image-con{
+        margin-left: 30%;
+    }
+
+    .location-con{
+        /* z-index: -1; */
+    }
+    
+    .locations{
+        display: block;
+    }
+
+    .where{
+        margin-bottom: 5px;
+    }
+
+    .caretdown{
+        margin-left: 76%;
+    }
+
+    .caretdown-city{
+        margin-left: 78%;
+    }
+
+    .state-list{
+        position: relative;
+        margin-top: -26%;
+        margin-right: 4%;
+    }
+
+    .city-list{
+        position: relative;
+        margin-top: -13%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .date-list{
+        position: relative;
+        margin-top: -1%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .movieslist{
+    }
+    
+    .movie-card{
+        display: block;
+        padding: 5px;
+    }
+
+}
+
+@media(max-width: 542px){
+    .smallernav-logo{
+        margin-left: 60%;
+    }
+
+    .smallernav-search{
+        margin-left: 25%;
+    }
+
+    .smallernav-user{
+        margin-left: 15%;
+    }
+
+    .movieslist{
+        display: block;
+        margin: 2%;
+    }
+
+    .movie-card{
+    }
+
+    .movie-card img{
+        width: 450px;
+        margin-left: 0%;
+    }
+
+    .movie-info h2{
+        padding: 10px 0px;
+    }
+
+    .movie-name{
+        font-size: small;
+        width: 500px;
+    }
+
+    .my-list{
+        margin-left: 34%;
+    }
+}
+
+@media(max-width: 415px){
+    .smallernav-logo{
+        margin-left: 30%;
+    }
+
+    .smallernav-search{
+        margin-left: 18%;
+    }
+
+    .smallernav-user{
+        margin-left: 13%;
+    }
+
+    .sidebar{
+        margin-right: 45%;
+    }
+
+    .searchmodal-form input{
+        width: 70%;
+        font-size: x-large;
+    }
+
+    .caretdown{
+        margin-left: 70%;
+    }
+
+    .caretdown-city{
+        margin-left: 72%;
+    }
+
+    .state-list{
+        margin-top: -35%;
+    }
+
+    .city-list{
+        margin-top: -18%;
+    }
+
+    .movieslist{
+        display: block;
+        margin: 4% 10%;
+    }
+}

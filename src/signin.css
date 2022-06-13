@@ -1,0 +1,93 @@
+.signin-modal-bg{
+     height: 100%;
+     width: 100%;
+     position: fixed;
+     top: 0px;
+     z-index: 1000;
+     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.signin-modal{
+    margin-left: 28%;
+    margin-right: 28%;
+    margin-top: 8%;
+    background-color: #16161a;
+    border-radius: 1rem;
+    padding: 25px 40px;
+}
+
+.signin-modal img{
+    margin-left: 35%;
+}
+
+.signin-modal h2{
+    padding: 20px 0px;
+    font-size: medium
+}
+
+.signin-form label{
+    display: block;
+    color: darkgray;
+    padding: 10px 0px;
+}
+
+.signin-form input{
+    padding: 12px 0px;
+    width: 100%;
+    border: 1px grey solid;
+    border-radius: 0.8rem;
+    background-color: transparent;
+    color: white;
+    font-size: large;
+    margin-bottom: 3%;
+}
+
+.signin-form input:focus{
+    outline: none;
+}
+
+.signin-form input::content{
+    margin-left: 2%;
+}
+
+.signin-btn{
+    background-color: transparent;
+    border: 3px blueviolet solid;
+    color: white;
+    margin: 30px 0;
+    margin-left: 40%;
+    padding: 10px 30px;
+    border-radius: 2rem;
+}
+
+@media only screen and (max-width: 1280px){
+    .signin-btn{
+     margin-left: 35%;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .signin-modal{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+@media (max-width: 941.82px){
+    .signin-modal img{
+        margin-left: 38%;
+    }
+}
+
+@media only screen and (max-width: 640px){
+    .signin-btn{
+        margin-left: 30%;
+    }
+}
+
+@media(max-width: 542px){
+    .signin-modal{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}

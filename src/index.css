@@ -1,13 +1,367 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    background-color: black;
+    color: white;
+    font-family: 'MS Sans Serif', Geneva, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.backg-img{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+
+.smaller-navbar{
+    display: none;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    margin: 0%;
+    position: sticky;
+    top: 0px;
+    padding: 0% 12%;
+    background-color: transparent;
+}
+
+.nav.active{
+    background-color: black;
+}
+
+.nav-item{
+    text-decoration: none;
+    color: white;
+    margin: 0px 15px;
+    padding: 10px 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    border: none;
+}
+
+.about{
+    margin: 0% 12%;
+    margin-top: 15%;
+    /* padding-top: 15%; */
+}
+
+.about-title{
+    padding: 5px 0px;
+    font-family: 'MS Sans Serif', Geneva, sans-serif;
+    text-shadow: 3px 3px black;
+}
+
+.about-genre{
+    font-family: 'MS Sans Serif', Geneva, sans-serif;
+    font-size: smaller;
+    padding: 5px 0px;
+}
+
+.about-plot{
+    width: 40%;
+    line-height: 30px;
+    font-family: 'MS Sans Serif', Geneva, sans-serif;
+}
+
+.smaller-about{
+    display: none;
+}
+
+.ticket-btn{
+    border: none;
+    margin: 30px 0px;
+    padding: 15px 25px;
+    background-color: white;
+    border-radius: 2rem;
+    font-family: 'MS Sans Serif', Geneva, sans-serif;
+    font-size: medium;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.ticket-btn:hover{
+    background-color: lightgrey;
+    border-radius: 0.5rem;
+    transition: 1s;
+}
+
+.about-footer{
+    margin: 1% 12%;
+    display: flex;
+    align-items: center;
+}
+
+.my-list{
+    padding: 5px 15px;
+}
+
+.my-list p{
+    padding: 10px 5px;
+    font-size: small;
+}
+
+.trailer p{
+    padding: 10px 5px;
+    font-size: small;
+}
+
+.about-footer a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 15px;
+    font-size: small;
+    width: 30%;
+}
+
+.sub-image-con{
+    overflow: auto;
+    white-space: nowrap;
+    width: 200px;
+    margin-left: 43%;
+}
+
+.sub-image{
+    width: 200px;
+    height: 150px;
+}
+
+.location-con{
+    margin: 2% 12%;
+    background-color: #16161a;
+    border-radius: 0.5rem;
+    padding: 40px 15px;
+    padding-bottom: 50px;
+    z-index: -1;
+    /* margin-bottom: 50%; */
+}
+
+.location-con h3{
+    padding: 10px 20px;
+    margin-bottom: 40px;
+    color: rgba(125,125,137,.7);
+    letter-spacing: 2px;
+    font-size: medium;
+}
+
+.locations{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.where{
+    display: flex;
+    align-items: center;
+    margin: 0px 15px;
+    padding: 10px 15px;
+    border: 1px rgba(125,125,137,.7) solid;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.where p{
+    padding: 5px 10px;
+}
+
+.caretdown{
+    margin-left: 70%;
+}
+
+.caretdown-city{
+    margin-left: 72%;
+}
+
+.state-list{
+    padding: 10px 15px;
+    padding-right: 16%;
+    color: black;
+    background-color: #fff;
+    margin-left: 15px; 
+    height: 200px;
+    overflow-y: scroll;
+    position: absolute;
+    z-index: 0;
+    border-radius: 0.5rem;
+}
+
+.state-list ul{
+    list-style: none;
+    /* z-index: 1000; */
+}
+
+.state-list li{
+    padding: 10px 5px;
+}
+
+.city-list{
+    padding: 10px 15px;
+    padding-right: 13%;
+    color: black;
+    background-color: #fff;
+    margin-left: 26%;
+    height: 200px;
+    overflow-y: scroll;
+    position: absolute;
+    border-radius: 0.5rem;
+}
+
+.city-list ul{
+    list-style: none;
+}
+
+.city-list li{
+    padding: 10px 5px;
+}
+
+.date-list{
+    padding: 10px 15px;
+    padding-right: 13%;
+    color: black;
+    background-color: #fff;
+    margin-left: 50.5%;
+    height: 200px;
+    overflow-y: scroll;
+    position: absolute;
+    border-radius: 0.5rem;
+}
+
+.date-list ul{
+    list-style: none;
+}
+
+.date-list li{
+    padding: 10px 5px;
+}
+
+.searchmodal-bg{
+    /* height: 50%; */
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+}
+
+.searchmodal{
+    z-index: 1000;
+    background-color: black;
+    padding: 13px 180px;
+}
+
+.searchmodal-form{
+    align-items: center;
+}
+
+.searchmodal-form input{
+    width: 90%;
+    padding: 18px 0px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.searchmodal-form input:focus{
+    outline: none;
+}
+
+.searchmodal-form input::placeholder{
+    color: #666;
+}
+
+.movieslist{
+    margin: 4% 12%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+}
+
+.movie-card{
+    display: flex;
+}
+
+.movie-card img{
+    width: 180px;
+    height: 180px;
+    border-radius: 0.5rem;
+}
+
+.movie-info{
+    padding: 0px 15px;
+}
+
+.movie-info h2{
+    padding-bottom: 30px;
+}
+
+.movie-name{
+    padding:20px 0px;
+    width:230px;
+    line-height:25px;
+    font-size:medium; 
+}
+
+.promotion-con{
+    background-color: #16161a;
+    padding: 2% 12%;
+    display: flex;
+    align-items: center;
+}
+
+.promotion-logo{
+    font-size: xx-large;
+    padding: 20px 10px;
+    border: 3px white solid;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.promotion-text{
+    padding: 0px 50px;
+}
+
+.promotion-text h2{
+    font-size: 40px;
+    padding: 10px 0px;
+    /* font-stretch: narrower; */
+}
+
+.promotion-text p{
+    font-size: x-large;
+    color: #666;
+    padding-bottom: 30px;
+}
+
+.promotion-text button{
+    border: none;
+    background-color: transparent;
+    backdrop-filter: 50%;
+    color: aquamarine;
+    padding: 0px 10px;
+    font-size: large;
+    font-weight: lighter;
+    cursor:pointer;
+    letter-spacing: 0.2em;
 }
