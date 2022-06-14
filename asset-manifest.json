@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/filmhouse-clone/static/css/main.b8ad42d8.css",
+    "main.js": "/filmhouse-clone/static/js/main.a42e472e.js",
+    "index.html": "/filmhouse-clone/index.html",
+    "main.b8ad42d8.css.map": "/filmhouse-clone/static/css/main.b8ad42d8.css.map",
+    "main.a42e472e.js.map": "/filmhouse-clone/static/js/main.a42e472e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8ad42d8.css",
+    "static/js/main.a42e472e.js"
+  ]
+}
