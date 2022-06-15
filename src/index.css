@@ -194,7 +194,7 @@ body{
 
 .state-list{
     padding: 10px 15px;
-    padding-right: 16%;
+    padding-right: 17%;
     color: black;
     background-color: #fff;
     margin-left: 15px; 
@@ -202,7 +202,6 @@ body{
     overflow-y: scroll;
     position: absolute;
     z-index: 0;
-    border-radius: 0.5rem;
 }
 
 .state-list ul{
@@ -216,14 +215,14 @@ body{
 
 .city-list{
     padding: 10px 15px;
-    padding-right: 13%;
+    padding-right: 14%;
     color: black;
     background-color: #fff;
     margin-left: 26%;
     height: 200px;
     overflow-y: scroll;
     position: absolute;
-    border-radius: 0.5rem;
+    z-index: unset;
 }
 
 .city-list ul{
@@ -236,14 +235,13 @@ body{
 
 .date-list{
     padding: 10px 15px;
-    padding-right: 13%;
+    padding-right: 14%;
     color: black;
     background-color: #fff;
     margin-left: 50.5%;
     height: 200px;
     overflow-y: scroll;
     position: absolute;
-    border-radius: 0.5rem;
 }
 
 .date-list ul{
@@ -364,4 +362,12 @@ body{
     font-weight: lighter;
     cursor:pointer;
     letter-spacing: 0.2em;
+}
+
+.other-pages{
+    margin-top: 10%;
+    text-align: center;
+    font-size: 50px;
+    color: #16161a;
+    filter: brightness(200%);
 }

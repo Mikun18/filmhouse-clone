@@ -33,7 +33,7 @@ const Navbar = () => {
     <SearchContext.Provider value={{setshowSearch, setShowSignIn}}>
             {showSearch && <Search />}
               <div className={navbar ? 'nav active': 'nav'} id='navbar'>
-                  <Link to='/'><img src="./logo.png" style={{width:'120px'}}/></Link>
+                  <Link to='/'><img src="./filmhouse-clone/logo.png" style={{width:'120px'}}/></Link>
                   <Link to='/' className='nav-item' style={{marginLeft:'100px'}}>Get Tickets</Link>
                   <Link to='/subscribe' className='nav-item'>Subscribe Now</Link>
                   <Link to='/food' className='nav-item'>Food and Drinks</Link>          
@@ -76,7 +76,7 @@ const Navbar = () => {
   <section>
    <div className='smaller-navbar'>
       <FontAwesomeIcon icon={faBars} style={{marginLeft:'3%', cursor:'pointer'}} onClick={clickBars} />
-      <Link to='/'><img src="./logo.png" style={{width:'120px', height:'80px'}} className='smallernav-logo'/></Link>
+      <Link to='/'><img src="./filmhouse-clone/logo.png" style={{width:'120px', height:'80px'}} className='smallernav-logo'/></Link>
       <FontAwesomeIcon icon={faMagnifyingGlass} style={{cursor:'pointer'}} onClick={() => setshowSearch(true)} className='smallernav-search'/>
       <FontAwesomeIcon icon={faUser} className='smallernav-user'style={{cursor:'pointer'}} onClick={() => setShowSignIn(true)}/>
       <FontAwesomeIcon icon={faCartShopping} style={{marginLeft:'15%'}}/>        

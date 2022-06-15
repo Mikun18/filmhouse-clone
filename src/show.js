@@ -41,7 +41,7 @@ const Show = () => {
               className="where"
               onClick={() => setList({ state: !list.state })}
             >
-              <FontAwesomeIcon icon={faLocationDot} className="icon" />
+              <FontAwesomeIcon icon={faLocationDot} className="icon" style={{color:'purple'}}/>
               <p>Lagos</p>
               <FontAwesomeIcon
                 icon={faCaretDown}
@@ -52,7 +52,7 @@ const Show = () => {
               className="where"
               onClick={() => setList({ city: !list.city })}
             >
-              <FontAwesomeIcon icon={faLocationDot} />
+              <FontAwesomeIcon icon={faLocationDot} style={{color:'purple'}}/>
               <p>Lekki</p>
               <FontAwesomeIcon
                 icon={faCaretDown}
@@ -63,7 +63,7 @@ const Show = () => {
               className="where"
               onClick={() => setList({ date: !list.date })}
             >
-              <FontAwesomeIcon icon={faCalendarDay} />
+              <FontAwesomeIcon icon={faCalendarDay} style={{color:'purple'}}/>
               <p>Today</p>
               <FontAwesomeIcon
                 icon={faCaretDown}

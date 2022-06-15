@@ -1,8 +1,6 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
-import './mediaqueries.css'
 
-const Subscribe = () => {
+const Bookings = () => {
   return (
     <section>
         <h2 className='other-pages'>This page will be available soon!</h2>
@@ -10,4 +8,4 @@ const Subscribe = () => {
   )
 }
 
-export default Subscribe
+export default Bookings

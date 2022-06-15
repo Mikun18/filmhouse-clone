@@ -14,17 +14,17 @@ import Promotions from "./promotions";
 const Homepage = () => {
   const [number, setNumber] = useState(1);
 
-  // useEffect(() => {
-  //   setInterval(() => {
-  //     setNumber((prev) => {
-  //       return prev + 1;
-  //     });
-  //   }, 4000);
-  // }, []);
+  useEffect(() => {
+    setInterval(() => {
+      setNumber((prev) => {
+        return prev + 1;
+      });
+    }, 4000);
+  }, []);
 
-  // if (number == movie.length) {
-  //   return setNumber(0);
-  // }
+  if (number == movie.length) {
+    return setNumber(0);
+  }
 
   return (
     <section>
@@ -107,7 +107,7 @@ const Homepage = () => {
 const SmallerAbout = () => {
   return (
     <section className="smaller-about">
-      <img src="./logo.png" alt="" style={{width:'100px'}}/>
+      <img src="./filmhouse-clone/logo.png" alt="" style={{width:'100px'}}/>
 
       <div className="sub-smaller-about">
         <p>Get Unlimited Ticket for Free</p>
