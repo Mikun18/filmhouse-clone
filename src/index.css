@@ -140,6 +140,7 @@ body{
     white-space: nowrap;
     width: 200px;
     margin-left: 43%;
+    border-radius: 50%;
 }
 
 .sub-image{
