@@ -107,7 +107,7 @@ const Homepage = () => {
 const SmallerAbout = () => {
   return (
     <section className="smaller-about">
-      <img src="./filmhouse-clone/logo.png" alt="" style={{width:'100px'}}/>
+      <img src="./logo.png" alt="" style={{width:'100px'}}/>
 
       <div className="sub-smaller-about">
         <p>Get Unlimited Ticket for Free</p>

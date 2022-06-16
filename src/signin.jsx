@@ -27,7 +27,7 @@ const Signin = ({setShowSignIn}) => {
                 <div>
                     <FontAwesomeIcon icon={faXmark} onClick={() => setShowSignIn(false)} style={{float:'right', fontSize:'larger', cursor:'pointer', borderRadius:'50%', boxShadow:'0px 1px 1px black', padding:'5px 10px'}} />          
                 </div>
-                <img src="./filmhouse-clone/home-logo.png" width={80}/>
+                <img src="./home-logo.png" width={80}/>
                 <div className='signin-con'>
                     <h2>Sign In</h2>
                     <form>
