@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/filmhouse-clone/static/css/main.db630e4d.css",
-    "main.js": "/filmhouse-clone/static/js/main.526065dc.js",
+    "main.js": "/filmhouse-clone/static/js/main.ff451bbe.js",
     "index.html": "/filmhouse-clone/index.html",
     "main.db630e4d.css.map": "/filmhouse-clone/static/css/main.db630e4d.css.map",
-    "main.526065dc.js.map": "/filmhouse-clone/static/js/main.526065dc.js.map"
+    "main.ff451bbe.js.map": "/filmhouse-clone/static/js/main.ff451bbe.js.map"
   },
   "entrypoints": [
     "static/css/main.db630e4d.css",
-    "static/js/main.526065dc.js"
+    "static/js/main.ff451bbe.js"
   ]
 }
