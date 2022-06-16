@@ -98,7 +98,51 @@
 
 @media (max-width: 941.82px){
     .nav{
-        padding: 0% 3%;
+        display: none;
+    }
+
+    .smaller-navbar{
+        display: flex;
+        align-items: center;
+        background-color: black;
+        padding: 0px 0px;
+        z-index: -1;
+    }
+
+    .smallernav-logo{
+        margin-left: 100%;
+    }
+
+    .smallernav-search{
+        margin-left: 30%;
+    }
+
+    .smallernav-user{
+        margin-left: 20%;
+    }
+
+    .sidebar-bg{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .sidebar{
+        background-color: #16161a;
+        margin-right: 60%;
+        height: 100%;
+        overflow: auto;
+    }
+
+    .side-item{
+        display: block;
+        text-decoration: none;
+        margin: 40px 20px;
+        color: darkgray;
+        font-size: larger;
     }
 
     .caretdown{
@@ -107,6 +151,36 @@
 
     .caretdown-city{
         margin-left: 62%;
+    }
+}
+
+@media (max-width: 870px){
+    .caretdown{
+        margin-left: 58%;
+    }
+
+    .state-list{
+        padding-right: 17%;
+    }
+
+    .city-list{
+        padding-right: 13%;
+    }
+
+    .date-list{
+        padding-right: 12%;
+    }
+
+    .movieslist{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .movie-card img{
+        margin-left: 5%;
+    }
+
+    .searchmodal-form input{
+        width: 87%;
     }
 }
 
