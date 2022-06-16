@@ -9,8 +9,8 @@ function App() {
   return (
     <HashRouter>
       <Routes>
-        <Route index element={<Homepage />} />
         <Route path='/' element={<Navbar/>}>
+        <Route index element={<Homepage />} />
           <Route path='subscribe' element={<Subscribe />}/>
           <Route path='food' element={<Food />} />
           <Route path='bookings' element={<Bookings />} />
