@@ -11,11 +11,10 @@ function App() {
       <HashRouter>
         <Routes>
           <Route path='/' element={<Homepage />} />
-          <Route path='/' element={<Navbar/>}>
+          <Route path='/' element={<Navbar/>} />
             <Route path='subscribe' element={<Subscribe />}/>
             <Route path='food' element={<Food />} />
             <Route path='bookings' element={<Bookings />} />
-          </Route>
         </Routes>
       </HashRouter>
     </div>
