@@ -14,17 +14,17 @@ import Promotions from "./promotions";
 const Homepage = () => {
   const [number, setNumber] = useState(1);
 
-  // useEffect(() => {
-  //   setInterval(() => {
-  //     setNumber((prev) => {
-  //       return prev + 1;
-  //     });
-  //   }, 4000);
-  // }, []);
+  useEffect(() => {
+    setInterval(() => {
+      setNumber((prev) => {
+        return prev + 1;
+      });
+    }, 4000);
+  }, []);
 
-  // if (number == movie.length) {
-  //   return setNumber(0);
-  // }
+  if (number == movie.length) {
+    return setNumber(0);
+  }
 
   return (
     <section>
