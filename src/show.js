@@ -73,27 +73,15 @@ const Show = () => {
           </article>
 
           <section onMouseLeave={exitDropDown} className='dropdown'>
-            <div>
-              {list.state && (
-                <div>
-                  <State />
-                </div>
-              )}
-            </div>
-            <div>
-              {list.city && (
-                <div>
-                  <City />
-                </div>
-              )}
-            </div>
-            <div>
-              {list.date && (
-                <div>
-                  <Date />
-                </div>
-              )}
-            </div>
+            <AnimatePresence>
+              {list.state && <State />}
+            </AnimatePresence>
+            <AnimatePresence>
+              {list.city && <City /> }
+            </AnimatePresence>
+            <AnimatePresence>
+              {list.date && <Date /> }
+            </AnimatePresence>
           </section>
         </div>
       </div>
@@ -115,6 +103,10 @@ const State = () => {
       y: 0,
       transition: {delay: 0.1, when: 'beforeChildren', delayChildren: 0.1,
       staggerChildren: 0.2}
+    },
+    close: {
+      opacity: 0,
+      transition: {duration: 0.3}
     }
   }
   
@@ -130,10 +122,8 @@ const State = () => {
     }
 
   return (
-    <ShowContext.Provider value={{boxVariant, listVariant}}>
-      <AnimatePresence>
-        
-        <motion.section className="state-list" variants={boxVariant} animate='visible' initial='hidden'>
+    <ShowContext.Provider value={{boxVariant, listVariant}}>        
+        <motion.section className="state-list" variants={boxVariant} animate='visible' initial='hidden' exit='close'>
           <ul>
             <motion.li variants={listVariant} >Lagos</motion.li>
             <motion.li variants={listVariant}>Rivers</motion.li>
@@ -143,7 +133,6 @@ const State = () => {
             <motion.li variants={listVariant}>Edo</motion.li>
           </ul>
         </motion.section>
-      </AnimatePresence>
     </ShowContext.Provider>
   );
 };
@@ -160,6 +149,10 @@ const City = () => {
       y: 0,
       transition: {delay: 0.1, when: 'beforeChildren', delayChildren: 0.1,
       staggerChildren: 0.2}
+    },
+    close: {
+      opacity: 0,
+      transition: {duration: 0.3}
     }
   }
   
@@ -175,7 +168,7 @@ const City = () => {
     }
 
   return (
-    <motion.section className="city-list" variants={boxVariant} animate='visible' initial='hidden'>
+    <motion.section className="city-list" variants={boxVariant} animate='visible' initial='hidden' exit='close'>
       <ul>
         <motion.li variants={listVariant}>Surulere</motion.li>
         <motion.li variants={listVariant}>Circle Mall</motion.li>
@@ -197,6 +190,10 @@ const Date = () => {
       y: 0,
       transition: {delay: 0.1, when: 'beforeChildren', delayChildren: 0.1,
       staggerChildren: 0.2}
+    },
+    close: {
+      opacity: 0,
+      transition: {duration: 0.3}
     }
   }
   
@@ -212,7 +209,7 @@ const Date = () => {
     }
 
   return (
-    <motion.section className="date-list" variants={boxVariant} animate='visible' initial='hidden'>
+    <motion.section className="date-list" variants={boxVariant} animate='visible' initial='hidden' exit='close'>
       <ul>
         <motion.li variants={listVariant}>TODAY</motion.li>
         <motion.li variants={listVariant}>Jun, Wed 01</motion.li>

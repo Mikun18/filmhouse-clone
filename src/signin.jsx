@@ -17,13 +17,17 @@ const Signin = ({setShowSignIn}) => {
         visible: {
             y: 0,
             transition: {  when: 'beforeChildren'}
+        },
+        close: {
+            y: "-100vw",
+            transition: {duration: 1}
         }
     }
 
   return (
     <section>
         <article className='signin-modal-bg'>
-            <motion.div className='signin-modal' variants={boxVariant} animate='visible' initial='hidden'>
+            <motion.div className='signin-modal' variants={boxVariant} animate='visible' initial='hidden' exit='close'>
                 <div>
                     <FontAwesomeIcon icon={faXmark} onClick={() => setShowSignIn(false)} style={{float:'right', fontSize:'larger', cursor:'pointer', borderRadius:'50%', boxShadow:'0px 1px 1px black', padding:'5px 10px'}} />          
                 </div>

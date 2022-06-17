@@ -31,7 +31,11 @@ const Navbar = () => {
 
   return (
     <SearchContext.Provider value={{setshowSearch, setShowSignIn}}>
-            {showSearch && <Search />}
+            <AnimatePresence>
+             {showSearch && <Search />}  
+            </AnimatePresence>
+
+
               <div className={navbar ? 'nav active': 'nav'} id='navbar'>
                   <Link to='/'><img src="./logo.png" style={{width:'120px'}}/></Link>
                   <Link to='/' className='nav-item' style={{marginLeft:'100px'}}>Get Tickets</Link>
@@ -50,7 +54,9 @@ const Navbar = () => {
               </div>
 
        <div>
-          {showSignIn && <Signin setShowSignIn={setShowSignIn}/>}
+          <AnimatePresence>
+            {showSignIn && <Signin setShowSignIn={setShowSignIn}/>}
+          </AnimatePresence>
           <Smallernav />
         </div>
 
@@ -82,9 +88,9 @@ const Navbar = () => {
       <FontAwesomeIcon icon={faCartShopping} style={{marginLeft:'15%'}}/>        
     </div> 
 
-    <div>
-      {showSideBar && <SideBar setShowSideBar={setShowSideBar}/>}
-    </div>
+    <AnimatePresence>
+      {showSideBar && <SideBar setShowSideBar={setShowSideBar} />}
+    </AnimatePresence>
   </section>
  )
 };
@@ -104,7 +110,7 @@ const SideBar = ({setShowSideBar}) => {
     },
     close: {
       x: "-100vw",
-      transition: {delay: 1}
+      transition: {duration: 0.5}
     }
   }
 
@@ -154,12 +160,16 @@ const Search = () => {
     hidden: {
       y: -100,
       opacity: 0
+    },
+    close: {
+      y: "-100vw",
+      transition: {duration: 1}
     }
   }
 
   return(
     <article className='searchmodal-bg'>
-        <motion.div className='searchmodal' variants={boxVariant} animate='visible' initial='hidden'>
+        <motion.div className='searchmodal' variants={boxVariant} animate='visible' initial='hidden' exit='close'>
           <form className='searchmodal-form'>
             <FontAwesomeIcon icon={faMagnifyingGlass} style={{padding:'0px 10px', paddingTop:'10px', fontSize:'30px'}} />
             <input type="text" name='search' value={searchValue} onChange={(e) => setsearchValue(e.target.value)} placeholder='search for movies'/>
