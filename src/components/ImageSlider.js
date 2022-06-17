@@ -3,6 +3,7 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import { movie } from '../movie'
 
+//slicer function
 function slicer(arr, start, no) {
   let result = arr.slice(start, start + no);
   if (result.length < no) {
