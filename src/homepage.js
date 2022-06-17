@@ -10,28 +10,30 @@ import { faPlay, faPlus, faArrowRightLong } from "@fortawesome/free-solid-svg-ic
 import Show from "./show";
 import Movieslist from "./movieslist";
 import Promotions from "./promotions";
+import ImageSlider from "./components/ImageSlider";
 
 const Homepage = () => {
-  const [number, setNumber] = useState(1);
+  const [number, setNumber] = useState(4);
 
-  // useEffect(() => {
-  //   setInterval(() => {
-  //     setNumber((prev) => {
-  //       return prev + 1;
-  //     });
-  //   }, 4000);
-  // }, []);
+  useEffect(() => {
+   const interval= setInterval(() => {
+      setNumber((prev) => {
+        if (prev===movie.length-1){
+          return 0
+        }
+        return prev + 1;
+      });
+    }, 5000);
 
-  // if (number == movie.length) {
-  //   return setNumber(0);
-  // }
+    return () => clearInterval(interval);
+  }, []);
+
 
   return (
     <section>
-      
       <article className="hero-page">
         <img src={movie[number].image} className="backg-img" />
-        <div style={{position:'sticky', top:'0px'}}>
+        <div style={{ position: "sticky", top: "0px" }}>
           <Navbar />
         </div>
 
@@ -50,7 +52,7 @@ const Homepage = () => {
                 padding: "20px",
                 borderRadius: "50%",
                 background: "rgba(90, 0, 90, 0.4)",
-                cursor: 'pointer'
+                cursor: "pointer",
               }}
             />
             <p>My List</p>
@@ -64,9 +66,9 @@ const Homepage = () => {
                 padding: "20px",
                 borderRadius: "50%",
                 background: "rgba(90, 0, 90, 0.3)",
-                position:'relative',
+                position: "relative",
                 zIndex: "-1",
-                cursor: 'pointer'
+                cursor: "pointer",
               }}
             />
             <p>Watch Trailer</p>
@@ -85,9 +87,11 @@ const Homepage = () => {
             </p>
           </div>
         </div>
-        <section className="sub-image-con">
+        <ImageSlider no={number} />
+
+        {/* <section className="sub-image-con">
           <img src={movie[number].image} className="sub-image" />
-        </section>
+        </section> */}
 
         <div>
           <SmallerAbout />
