@@ -37,7 +37,7 @@ const Navbar = () => {
 
 
               <div className={navbar ? 'nav active': 'nav'} id='navbar'>
-                  <Link to='/'><img src="./logo.png" style={{width:'120px'}}/></Link>
+                  <Link to='/'><img src="./filmhouse-clone/logo.png" alt='film-house logo' style={{width:'120px'}}/></Link>
                   <Link to='/' className='nav-item' style={{marginLeft:'100px'}}>Get Tickets</Link>
                   <Link to='/subscribe' className='nav-item'>Subscribe Now</Link>
                   <Link to='/food' className='nav-item'>Food and Drinks</Link>          
