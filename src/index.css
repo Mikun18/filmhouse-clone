@@ -40,13 +40,20 @@ body{
 }
 
 .nav{
+    transition: all 500ms ease-in-out;
+    background-color: transparent;
+}
+.nav>.container{
     display: flex;
     align-items: center;
     margin: 0%;
     position: sticky;
     top: 0px;
-    padding: 0% 12%;
-    background-color: transparent;
+    max-width: 1420px;
+    margin: auto;
+    justify-content: space-between;
+    width: 100%;
+    
 }
 
 .nav.active{
